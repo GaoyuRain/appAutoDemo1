@@ -3,6 +3,8 @@ author :Rain
 Date : 2019/08/02
 Description : 获取各个页面对象
 """
+from page.add_address_page import AddAddressPage
+from page.address_mangae_page import AddressManagePage
 from page.login_choice_page import LoginChoicePage
 from page.login_page import LoginPage
 from page.main_page import MainPage
@@ -33,3 +35,15 @@ class PageUtils:
     def get_settings_page(self):
         ''''设置页面'''
         return SettingsPage(self.driver)
+
+    def get_address_manage_page(self):
+        '''地址管理页面'''
+        return AddressManagePage(self.driver)
+
+    def get_add_address_page(self):
+        '''添加地址页面'''
+        return AddAddressPage(self.driver)
+
+
+if __name__ == '__main__':
+    pass

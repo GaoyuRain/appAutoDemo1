@@ -1,0 +1,15 @@
+"Status","Name","Duration in ms","Description"
+"failed","scripts.test_address_manage.TestAddressManger.test_add_address_suc[test_address_001-lili-13344443333-area0-19999\u53f7-111111-None-1]","44552","
+author :Rain
+Date : 2019/08/02
+Description :
+
+
+test_add_address_suc"
+"broken","scripts.test_address_manage.TestAddressManger.test_add_address_suc[test_address_002-lucy-13377778888-area1-10086\u53f7-222222-None-0]","15333","
+author :Rain
+Date : 2019/08/02
+Description :
+
+
+test_add_address_suc"

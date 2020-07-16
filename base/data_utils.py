@@ -33,7 +33,19 @@ class DataUtils:
                 suc_data.append((key, *list(value.values())))
         return [suc_data, fail_data]
 
+    @staticmethod
+    def get_add_address_data(file_name):
+        data = DataUtils.get_yml_data(file_name)
+        keys = data.keys()
+        data_list = []
+        for key in keys:
+            values: dict = data.get(key)
+            data_list.append((key, values.get('name'), values.get('phone'), eval(values.get('area'))
+                              , values.get('detail'), values.get('post_code'), values.get('isdefault')
+                              , values.get('tag')))
+        return data_list
+
 
 if __name__ == '__main__':
-    data = DataUtils.get_login_data('login_data.yml')
+    data = DataUtils.get_add_address_data('addres_data.yml')
     print(data)

@@ -27,7 +27,7 @@ test_login_005:
 test_login_013:
   username: "RainGao"
   passwd: "15935"
-  toast: "密码错误"
+  toast: "密码错误1"
   expect_data: "登录密码错误"
 
 test_login_014:
@@ -46,4 +46,4 @@ test_login_016:
   username: "selenium"
   passwd: "1593159"
   toast: "不存在"
-  expect_data: "此用户不存在"
+  expect_data: "此用户不存在1"

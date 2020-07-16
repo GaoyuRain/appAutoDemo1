@@ -1,0 +1,21 @@
+[ {
+  "uid" : "edd197bcb5d304e2",
+  "name" : "test_address_manage.TestAddressManger.test_add_address_suc[test_address_001-lili-13344443333-area0-19999\\u53f7-111111-None-1]",
+  "time" : {
+    "start" : 1565011927645,
+    "stop" : 1565011972197,
+    "duration" : 44552
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0814a82fcaf7c4e",
+  "name" : "test_address_manage.TestAddressManger.test_add_address_suc[test_address_002-lucy-13377778888-area1-10086\\u53f7-222222-None-0]",
+  "time" : {
+    "start" : 1565011972207,
+    "stop" : 1565011987540,
+    "duration" : 15333
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

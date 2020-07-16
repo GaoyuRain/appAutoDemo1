@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-54IJVK6",
+    "children" : [ {
+      "name" : "980-MainThread",
+      "children" : [ {
+        "name" : "test_address_manage.TestAddressManger.test_add_address_suc[test_address_001-lili-13344443333-area0-19999\\u53f7-111111-None-1]",
+        "uid" : "edd197bcb5d304e2",
+        "parentUid" : "f499549f4f62554e2cefba6e02e7cb08",
+        "status" : "failed",
+        "time" : {
+          "start" : 1565011927645,
+          "stop" : 1565011972197,
+          "duration" : 44552
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_address_manage.TestAddressManger.test_add_address_suc[test_address_002-lucy-13377778888-area1-10086\\u53f7-222222-None-0]",
+        "uid" : "e0814a82fcaf7c4e",
+        "parentUid" : "f499549f4f62554e2cefba6e02e7cb08",
+        "status" : "broken",
+        "time" : {
+          "start" : 1565011972207,
+          "stop" : 1565011987540,
+          "duration" : 15333
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f499549f4f62554e2cefba6e02e7cb08"
+    } ],
+    "uid" : "a20db3707c8159a45410fe8076e645cd"
+  } ]
+}

@@ -1,0 +1,117 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1565012528576" stop="1565012588537">
+  <description>
+author :Rain
+Date : 2019/08/02
+Description :
+</description>
+  <name>scripts</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1565012528576" status="passed" stop="1565012573679">
+      <description>test_add_address_suc</description>
+      <name>test_address_manage.TestAddressManger.test_add_address_suc[test_address_001-lili-13344443333-area0-19999\u53f7-111111-None-1]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="15424-MainThread"/>
+        <label name="host" value="DESKTOP-54IJVK6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1565012546922" status="passed" stop="1565012548718">
+          <name>首页点击我的按钮</name>
+          <title>首页点击我的按钮</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012548718" status="passed" stop="1565012550815">
+          <name>点击以有账户去登陆按钮</name>
+          <title>点击以有账户去登陆按钮</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012550815" status="passed" stop="1565012554033">
+          <name>登录</name>
+          <title>登录</title>
+          <attachments>
+            <attachment source="0e431cc3-4637-4bcf-826d-db30bb8a9487-attachment.txt" title="登录信息" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1565012554033" status="passed" stop="1565012556473">
+          <name>点击设置按钮</name>
+          <title>点击设置按钮</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012556473" status="passed" stop="1565012557953">
+          <name>点击地址管理按钮</name>
+          <title>点击地址管理按钮</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012557954" status="passed" stop="1565012559875">
+          <name>点击新增地址按钮</name>
+          <title>点击新增地址按钮</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012559875" status="passed" stop="1565012571631">
+          <name>输入新地址信息</name>
+          <title>输入新地址信息</title>
+          <attachments>
+            <attachment source="b87b2465-3018-4597-9495-e41342727e07-attachment.txt" title="地址信息" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1565012571631" status="passed" stop="1565012573678">
+          <name>通过默认按钮定位收件人姓名和手机号</name>
+          <title>通过默认按钮定位收件人姓名和手机号</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1565012573681" status="passed" stop="1565012588537">
+      <description>test_add_address_suc</description>
+      <name>test_address_manage.TestAddressManger.test_add_address_suc[test_address_002-lucy-13377778888-area1-10086\u53f7-222222-None-0]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="15424-MainThread"/>
+        <label name="host" value="DESKTOP-54IJVK6"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1565012573683" status="passed" stop="1565012573742">
+          <name>点击新增地址按钮</name>
+          <title>点击新增地址按钮</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012573742" status="passed" stop="1565012586450">
+          <name>输入新地址信息</name>
+          <title>输入新地址信息</title>
+          <attachments>
+            <attachment source="0beacca1-9a25-4d68-b54d-e755db5f91ff-attachment.txt" title="地址信息" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1565012586450" status="passed" stop="1565012588511">
+          <name>通过默认按钮定位收件人姓名和手机号</name>
+          <title>通过默认按钮定位收件人姓名和手机号</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1565012588511" status="passed" stop="1565012588537">
+          <name>获取默认按钮数量</name>
+          <title>获取默认按钮数量</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

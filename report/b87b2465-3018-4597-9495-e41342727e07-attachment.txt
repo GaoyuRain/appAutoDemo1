@@ -1,0 +1,1 @@
+收件人:lili,电话号码:13344443333,区域:('浙江省', '杭州市', '上城区'),详细地址:19999号,邮编:<module 'django.core.mail' from 'f:\\python\\lib\\site-packages\\django\\core\\mail\\__init__.py'>,是否默认:None

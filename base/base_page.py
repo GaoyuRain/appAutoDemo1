@@ -48,6 +48,14 @@ class BasePage:
         """
         self.get_element(loc, timeout, poll_frequency).click()
 
+    def click_text_element(self, loc, text):
+        """
+        点击根据text文本定位的元素
+        """
+        path = (loc[0], loc[1].format(text))
+        print('path:', path)
+        self.click_element(path)
+
     def send_element(self, loc, text, timeout=15, poll_frequency=1.0):
         """
         输入文本内容
@@ -64,6 +72,7 @@ class BasePage:
         # 输入
         input_text.send_keys(text)
 
+    @allure.step(title='滑动屏幕')
     def scroll_screen(self, tag=1):
         """
         滑动屏幕方法
@@ -82,24 +91,31 @@ class BasePage:
         height = screen.get("height")
         # 判断滑动 80% -> 30%
         if tag == 1:
+            allure.attach('上滑', '')
             self.driver.swipe(width * 0.5, height * 0.8, width * 0.5, height * 0.3)
         if tag == 2:
+            allure.attach('下滑', '')
             self.driver.swipe(width * 0.5, height * 0.3, width * 0.5, height * 0.8)
         if tag == 3:
+            allure.attach('左滑', '')
             self.driver.swipe(width * 0.8, height * 0.5, width * 0.3, height * 0.5)
         if tag == 4:
+            allure.attach('右滑', '')
             self.driver.swipe(width * 0.3, height * 0.5, width * 0.8, height * 0.5)
 
+    @allure.step(title='获取toast提示信息')
     def get_toast_text(self, text):
         toast_xpath = (By.XPATH, '//*[contains(@text,"{}")]'.format(text))
-        return self.get_element(toast_xpath).text
+        result = self.get_element(toast_xpath, timeout=3, poll_frequency=0.5).text
+        allure.attach('信息文本', 'toast:{},result:{}'.format(text, result))
+        return result
 
     def attach_pic(self, pic_name):
         '''截屏'''
         pic_path = BASE_DIR + os.sep + 'image' + os.sep + '{}_{}.png'.format(pic_name, time.strftime('%Y%m%d_%H%M%S'))
         self.driver.get_screenshot_as_file(pic_path)
         with open(pic_path, 'rb') as f:
-            allure.attach('bug截图', f.read(), allure.attach_type.PNG)
+            allure.attach('bug截图_' + pic_name, f.read(), allure.attach_type.PNG)
 
 
 if __name__ == '__main__':

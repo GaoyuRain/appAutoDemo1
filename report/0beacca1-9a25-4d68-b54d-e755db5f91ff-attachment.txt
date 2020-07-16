@@ -1,0 +1,1 @@
+收件人:lucy,电话号码:13377778888,区域:('浙江省', '嘉兴市', '南湖区'),详细地址:10086号,邮编:<module 'django.core.mail' from 'f:\\python\\lib\\site-packages\\django\\core\\mail\\__init__.py'>,是否默认:None

@@ -1,0 +1,25 @@
+test_address_001: # 默认
+    name: "lili"
+    phone: "13344443333"
+    area: ("浙江省","杭州市","上城区")
+    detail: "19999号"
+    post_code: "111111"
+    isdefault: ~
+    tag: 1 # 默认
+
+test_address_002: # 非默认地址
+    name: "lucy"
+    phone: "13377778888"
+    area: ("浙江省","嘉兴市","南湖区")
+    detail: "10086号"
+    post_code: "222222"
+    isdefault: ~
+    tag: 0 # 不判断默认
+
+#test_update_001:
+#    name: "张三"
+#    isdefault: 1
+#
+#
+#test_delete_001:
+#  name: "张三"
